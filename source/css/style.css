@@ -1,0 +1,127 @@
+body {
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  background-color: rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 18px;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  background-color: rgb(10, 10, 10);
+  height: 46px;
+
+  margin: 0;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.warble-img {
+  width: 30px;
+  height: 30px;
+  float: left;
+  position: relative;
+  top: 9px;
+}
+
+.warble-title {
+  margin: 0;
+  padding: 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#search-box {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  width: 520px;
+  height: 35px;
+  padding: 0px 20px;
+  margin: 0;
+  border: 1px solid rgb(31, 31, 31);
+}
+
+.search-button {
+  background-color: rgb(15, 15, 15);
+  width: 53px;
+  height: 37px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(31, 31, 31);
+}
+
+.search-button img {
+  width: 15px;
+  height: 15px;
+}
+
+.header-button {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  width: 55px;
+  height: 37px;
+  margin: 0;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(31, 31, 31);
+}
+
+.short-info {
+  background-color: black;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 86px);
+}
+
+.left-sidebar {
+  background-color: rgb(136, 83, 83);
+  padding: 0px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content {
+}
