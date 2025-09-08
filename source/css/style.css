@@ -1,6 +1,5 @@
 body {
   font-family: "Noto Sans", Arial, Helvetica, sans-serif;
-  font-style: italic;
   background-color: rgb(10, 10, 10);
   color: rgb(255, 255, 255);
   margin: 0;
@@ -38,7 +37,7 @@ header {
 .logo-container {
   display: flex;
   justify-content: center;
-  padding-left: 35px;
+  padding-left: 30px;
 }
 
 .warble-img {
@@ -46,7 +45,7 @@ header {
   height: 26px;
   float: left;
   position: relative;
-  top: 9px;
+  top: 11px;
 }
 
 .warble-title {
@@ -104,8 +103,10 @@ header {
   background-color: rgb(255, 255, 255);
   color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0px 20px;
   align-items: center;
+  font-style: italic;
 }
 
 .main {
@@ -114,15 +115,80 @@ header {
 }
 
 .left-sidebar {
-  background-color: rgb(136, 83, 83);
+  background-color: rgb(10, 10, 10);
+
   padding: 0px 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 25px 0px;
   width: 220px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border-right: 1px solid rgb(90, 90, 90);
 }
 
-.content {
+.showcase {
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-title {
+  margin: 0;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.song-cover {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+}
+
+.song-title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.author {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.author-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.song-author {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.queue {
+}
+
+.queue-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  background-color: darkgreen;
+  margin: 20px;
+}
+
+.short-song-menu {
+  display: flex;
+  height: 70px;
+  background-color: beige;
 }
