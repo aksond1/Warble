@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Warble</title>
     <link rel="stylesheet" href="/source/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
@@ -42,7 +42,7 @@
     <div class="main">
       <div class="left-sidebar">
         <div class="showcase">
-          <h3 class="showcase-title">< Song Information ></h3>
+          <h3 class="showcase-title">< Song Player ></h3>
           <img
             class="song-cover"
             src="/assets/images/jpg/song-cover.jpeg"
@@ -55,14 +55,467 @@
               src="/assets/images/jpg/author-icon.jpeg"
               alt="author-icon"
             />
-            <div style="display: flex; flex-direction: column; gap: 4px">
-              <p class="song-author">СТРУКТУРА ЩАСТЯ</p>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                justify-content: center;
+              "
+            >
+              <p style="margin: 0">СТРУКТУРА ЩАСТЯ</p>
               <p style="margin: 0; font-size: 10px">
                 116.3k followers&nbsp; • &nbsp;42 songs
               </p>
             </div>
           </div>
-          <div class="queue"><p class="queue-title">Next in queue:</p></div>
+
+          <div class="player">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.75 20C2.75 20.5523 3.19772 21 3.75 21C4.30228 21 4.75 20.5523 4.75 20L4.75 4C4.75 3.44772 4.30229 3 3.75 3C3.19772 3 2.75 3.44772 2.75 4V20Z"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  d="M20.75 19.0526C20.75 20.4774 19.1383 21.305 17.9803 20.4748L7.51062 12.9682C6.50574 12.2477 6.54467 10.7407 7.5854 10.073L18.0551 3.35665C19.2198 2.60946 20.75 3.44583 20.75 4.82961L20.75 19.0526Z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"
+              />
+            </svg>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M21 4C21 3.44772 20.5523 3 20 3C19.4477 3 19 3.44772 19 4V20C19 20.5523 19.4477 21 20 21C20.5523 21 21 20.5523 21 20V4Z"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  d="M3 4.94743C3 3.5226 4.61175 2.69498 5.7697 3.52521L16.2394 11.0318C17.2443 11.7523 17.2053 13.2593 16.1646 13.927L5.69492 20.6434C4.53019 21.3905 3 20.5542 3 19.1704V4.94743Z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+            </svg>
+          </div>
+
+          <div class="queue">
+            <p class="queue-title">Next in queue:</p>
+            <div class="song-info-block">
+              <div class="songs-in-queue">
+                <img
+                  class="song-covers-in-queue"
+                  src="/assets/images/jpg/song-cover-1.jpg"
+                  alt="Flare by Hensonn"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    justify-content: center;
+                  "
+                >
+                  <p style="margin: 0; font-weight: bold; font-size: 15px">
+                    Flare
+                  </p>
+                  <p style="margin: 0; font-size: 12px">Hensonn</p>
+                </div>
+              </div>
+
+              <svg
+                class="reorder"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14C6 12.8954 6.89543 12 8 12Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M10 2C10 0.89543 9.10457 -4.82823e-08 8 0C6.89543 4.82823e-08 6 0.895431 6 2C6 3.10457 6.89543 4 8 4C9.10457 4 10 3.10457 10 2Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="song-info-block">
+              <div class="songs-in-queue">
+                <img
+                  class="song-covers-in-queue"
+                  src="/assets/images/jpg/song-cover-2.jpg"
+                  alt="WEB-CUM by СТРУКТУРА ЩАСТЯ"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    justify-content: center;
+                  "
+                >
+                  <p style="margin: 0; font-weight: bold; font-size: 15px">
+                    WEB-CUM
+                  </p>
+                  <p style="margin: 0; font-size: 12px">СТРУКТУРА ЩАСТЯ</p>
+                </div>
+              </div>
+
+              <svg
+                class="reorder"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14C6 12.8954 6.89543 12 8 12Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M10 2C10 0.89543 9.10457 -4.82823e-08 8 0C6.89543 4.82823e-08 6 0.895431 6 2C6 3.10457 6.89543 4 8 4C9.10457 4 10 3.10457 10 2Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="song-info-block">
+              <div class="songs-in-queue">
+                <img
+                  class="song-covers-in-queue"
+                  src="/assets/images/jpg/song-cover-3.jpg"
+                  alt="Ride by Twenty One Pilots"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    justify-content: center;
+                  "
+                >
+                  <p style="margin: 0; font-weight: bold; font-size: 15px">
+                    Ride
+                  </p>
+                  <p style="margin: 0; font-size: 12px">Twenty One Pilots</p>
+                </div>
+              </div>
+
+              <svg
+                class="reorder"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14C6 12.8954 6.89543 12 8 12Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M10 2C10 0.89543 9.10457 -4.82823e-08 8 0C6.89543 4.82823e-08 6 0.895431 6 2C6 3.10457 6.89543 4 8 4C9.10457 4 10 3.10457 10 2Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="song-info-block">
+              <div class="songs-in-queue">
+                <img
+                  class="song-covers-in-queue"
+                  src="/assets/images/jpg/song-cover-4.jpg"
+                  alt="хвора на любов by vioria"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    justify-content: center;
+                  "
+                >
+                  <p style="margin: 0; font-weight: bold; font-size: 15px">
+                    хвора на любов
+                  </p>
+                  <p style="margin: 0; font-size: 12px">vioria</p>
+                </div>
+              </div>
+
+              <svg
+                class="reorder"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14C6 12.8954 6.89543 12 8 12Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M10 2C10 0.89543 9.10457 -4.82823e-08 8 0C6.89543 4.82823e-08 6 0.895431 6 2C6 3.10457 6.89543 4 8 4C9.10457 4 10 3.10457 10 2Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="song-info-block">
+              <div class="songs-in-queue">
+                <img
+                  class="song-covers-in-queue"
+                  src="/assets/images/jpg/song-cover-5.jpg"
+                  alt="Bad Boys by Inner Circle"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    justify-content: center;
+                  "
+                >
+                  <p style="margin: 0; font-weight: bold; font-size: 15px">
+                    Bad Boys
+                  </p>
+                  <p style="margin: 0; font-size: 12px">Inner Circle</p>
+                </div>
+              </div>
+
+              <svg
+                class="reorder"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14C6 12.8954 6.89543 12 8 12Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M10 2C10 0.89543 9.10457 -4.82823e-08 8 0C6.89543 4.82823e-08 6 0.895431 6 2C6 3.10457 6.89543 4 8 4C9.10457 4 10 3.10457 10 2Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="song-info-block">
+              <div class="songs-in-queue">
+                <img
+                  class="song-covers-in-queue"
+                  src="/assets/images/jpg/song-cover-6.jpg"
+                  alt="The Contract by Twenty One Pilots"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    justify-content: center;
+                  "
+                >
+                  <p style="margin: 0; font-weight: bold; font-size: 15px">
+                    The Contract
+                  </p>
+                  <p style="margin: 0; font-size: 12px">Twenty One Pilots</p>
+                </div>
+              </div>
+
+              <svg
+                class="reorder"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14C6 12.8954 6.89543 12 8 12Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M10 2C10 0.89543 9.10457 -4.82823e-08 8 0C6.89543 4.82823e-08 6 0.895431 6 2C6 3.10457 6.89543 4 8 4C9.10457 4 10 3.10457 10 2Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="song-info-block">
+              <div class="songs-in-queue">
+                <img
+                  class="song-covers-in-queue"
+                  src="/assets/images/jpg/song-cover-7.jpg"
+                  alt="Faint by Linkin Park"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    justify-content: center;
+                  "
+                >
+                  <p style="margin: 0; font-weight: bold; font-size: 15px">
+                    Faint
+                  </p>
+                  <p style="margin: 0; font-size: 12px">Linkin Park</p>
+                </div>
+              </div>
+
+              <svg
+                class="reorder"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14C6 12.8954 6.89543 12 8 12Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M10 2C10 0.89543 9.10457 -4.82823e-08 8 0C6.89543 4.82823e-08 6 0.895431 6 2C6 3.10457 6.89543 4 8 4C9.10457 4 10 3.10457 10 2Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <a class="following" href="qwe.html">
+              <h4 style="margin: 0">
+                More
+                <span style="position: relative; bottom: 2px">↓</span> (23)
+              </h4>
+            </a>
+          </div>
         </div>
       </div>
 

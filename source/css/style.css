@@ -45,7 +45,7 @@ header {
   height: 26px;
   float: left;
   position: relative;
-  top: 11px;
+  top: 9px;
 }
 
 .warble-title {
@@ -111,7 +111,6 @@ header {
 
 .main {
   display: flex;
-  height: calc(100vh - 86px);
 }
 
 .left-sidebar {
@@ -154,8 +153,15 @@ header {
 .author {
   display: flex;
   gap: 10px;
-  padding-bottom: 10px;
+}
+
+.player {
+  padding: 13px 0px;
   border-bottom: 1px solid rgb(90, 90, 90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .author-icon {
@@ -164,18 +170,37 @@ header {
   border-radius: 50%;
 }
 
-.song-author {
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
-}
-
 .queue {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .queue-title {
   margin-top: 10px;
+  margin-bottom: 0;
   font-weight: bold;
+}
+
+.song-info-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.songs-in-queue {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.song-covers-in-queue {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.reorder {
 }
 
 .hero {
