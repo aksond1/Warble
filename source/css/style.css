@@ -284,3 +284,16 @@ header {
 .new-release-author-info {
   font-size: 9px;
 }
+
+.playlists-title-box {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gray {
+  color: gray;
+}
+
+.yellow {
+  color: gold;
+}
