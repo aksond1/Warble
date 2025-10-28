@@ -195,7 +195,8 @@ header {
   border-radius: 8px;
 }
 
-.song-title {
+.song-title,
+.playlist-title {
   font-weight: bold;
   font-size: 15px;
 }
@@ -224,13 +225,15 @@ header {
 
 /* New Releases */
 
-.new-releases-section {
+.new-releases-section,
+.rpc-section {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.new-releases-title-box {
+.new-releases-title-box,
+.rpc-title-box {
   display: flex;
   justify-content: space-between;
   padding: 0px 3px;
@@ -248,29 +251,34 @@ header {
   height: 25px;
 }
 
-.new-releases-list {
+.new-releases-list,
+.rpc-list {
   gap: 24px;
   display: flex;
 }
 
-.new-release-box {
+.new-release-box,
+.rpc-box {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.new-release-cover {
+.new-release-cover,
+.rpc-cover {
   height: 180px;
   width: 180px;
   border-radius: 10px;
 }
 
-.new-release-title-box {
+.new-release-title-box,
+.rpc-playlist-title {
   width: 174px;
   padding: 0px 3px;
 }
 
-.new-release-author-box {
+.new-release-author-box,
+.rpc-author-box {
   width: 174px;
   display: flex;
   gap: 7px;
@@ -289,25 +297,13 @@ header {
 
 /* Recently played Section */
 
-.playlists-section {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.playlists-title-box {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 3px;
-}
-
-.playlists-title {
+.rpc-title {
   font-size: 18px;
   font-weight: bold;
   display: flex;
 }
 
-.recently-played-list {
+.rpc-title-list {
   display: flex;
   align-items: center;
   gap: 6px;
