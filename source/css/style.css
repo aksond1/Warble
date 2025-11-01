@@ -233,15 +233,11 @@ header {
   gap: 15px;
 }
 
-.new-releases-title-box,
 .rpc-title-box,
 .categories-title-box {
   display: flex;
   justify-content: space-between;
   padding: 0px 3px;
-}
-
-.new-releases-title {
 }
 
 .turn-pages-buttons {
@@ -262,7 +258,11 @@ header {
   display: flex;
 }
 
-.new-release-box,
+.new-release-box {
+  display: flex;
+  gap: 10px;
+}
+
 .rpc-box,
 .categories-groups {
   display: flex;
@@ -270,14 +270,30 @@ header {
   gap: 10px;
 }
 
-.new-release-cover,
+.new-release-cover {
+  height: 113px;
+  width: 113px;
+  border-radius: 10px;
+}
+
 .rpc-cover {
   height: 180px;
   width: 180px;
   border-radius: 10px;
 }
 
-.new-release-title-box,
+.new-release-infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.new-releases-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .rpc-playlist-title {
   width: 174px;
   padding: 0px 3px;
