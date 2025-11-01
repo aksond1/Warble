@@ -249,7 +249,11 @@ header {
   height: 25px;
 }
 
-.new-releases-list,
+.new-releases-list {
+  display: flex;
+  gap: 24px;
+}
+
 .rpc-list,
 .categories-group1-list,
 .categories-group2-list,
@@ -271,8 +275,8 @@ header {
 }
 
 .new-release-cover {
-  height: 113px;
-  width: 113px;
+  height: 110px;
+  width: 110px;
   border-radius: 10px;
 }
 
@@ -286,6 +290,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 162px;
 }
 
 .new-releases-title-box {
@@ -294,12 +299,27 @@ header {
   align-items: center;
 }
 
+.options-button {
+  width: 25px;
+}
+
+.new-release-title-box .song-title {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .rpc-playlist-title {
   width: 174px;
   padding: 0px 3px;
 }
 
-.new-release-author-box,
+.new-release-author-box {
+  width: 162px;
+  display: flex;
+  gap: 7px;
+}
+
 .rpc-author-box {
   width: 174px;
   display: flex;
@@ -315,6 +335,24 @@ header {
 
 .new-release-author-info {
   font-size: 9px;
+}
+
+.new-releases-scroll-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid gray;
+}
+
+.scroll-button {
+  width: 30px;
+}
+
+.small-horizontal-line {
+  height: 2px;
+  width: 30px;
+  background-color: rgb(185, 185, 185);
 }
 
 /* Recently played Section */
