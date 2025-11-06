@@ -409,8 +409,7 @@ header {
 }
 
 .categories-group1-list li,
-.categories-group2-list li,
-.categories-group3-list li {
+.categories-group2-list li {
   background-color: #1d1d1d;
   width: 180px;
   height: 40px;
@@ -424,6 +423,45 @@ header {
   border: 1px solid rgb(211, 211, 211);
 }
 
-.categories-group3-list .view-all-categories {
+.categories-group2-list .view-all-categories {
   background-color: rgb(10, 10, 10);
+}
+
+.rock-section {
+  display: flex;
+  gap: 20px;
+}
+
+.rock-songs {
+  background-color: #1d1d1d;
+  width: 284px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.rock-rpa {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rock-new-releases {
+  background-color: #1d1d1d;
+  height: 130px;
+  width: 1304px;
+  border-radius: 10px;
+}
+
+.rock-playlists {
+  background-color: #1d1d1d;
+  height: 175px;
+  width: 1304px;
+  border-radius: 10px;
+}
+
+.rock-artists {
+  background-color: #1d1d1d;
+  height: 175px;
+  width: 1304px;
+  border-radius: 10px;
 }
