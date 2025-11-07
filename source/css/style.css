@@ -420,7 +420,7 @@ header {
 }
 
 .categories-group1-list .selected-genre {
-  border: 1px solid rgb(211, 211, 211);
+  outline: 1px solid rgb(160, 160, 160);
 }
 
 .categories-group2-list .view-all-categories {
@@ -463,5 +463,17 @@ header {
   background-color: #1d1d1d;
   height: 175px;
   width: 1304px;
+  border-radius: 10px;
+}
+
+.items-container {
+  display: flex;
+  gap: 24px;
+}
+
+.item {
+  background-color: #1d1d1d;
+  width: 384px;
+  height: 250px;
   border-radius: 10px;
 }
