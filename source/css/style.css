@@ -227,14 +227,16 @@ header {
 
 .new-releases-section,
 .rpc-section,
-.categories-section {
+.categories-section,
+.recommendations-section {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .rpc-title-box,
-.categories-title-box {
+.categories-title-box,
+.recommendations-title-box {
   display: flex;
   justify-content: space-between;
   padding: 0px 3px;
@@ -257,7 +259,8 @@ header {
 .rpc-list,
 .categories-group1-list,
 .categories-group2-list,
-.categories-group3-list {
+.categories-group3-list,
+.recommendations-list {
   gap: 24px;
   display: flex;
 }
@@ -268,7 +271,8 @@ header {
 }
 
 .rpc-box,
-.categories-groups {
+.categories-groups,
+.recommendations-box {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -309,7 +313,8 @@ header {
   align-items: center;
 }
 
-.rpc-playlist-title {
+.rpc-playlist-title,
+.recs-artist-title {
   width: 174px;
   padding: 0px 3px;
 }
@@ -320,7 +325,8 @@ header {
   gap: 7px;
 }
 
-.rpc-author-box {
+.rpc-author-box,
+.recs-artist-box {
   width: 174px;
   display: flex;
   gap: 7px;
@@ -466,6 +472,8 @@ header {
   border-radius: 10px;
 }
 
+/* Most Listened Artists */
+
 .items-container {
   display: flex;
   gap: 24px;
@@ -476,4 +484,38 @@ header {
   width: 384px;
   height: 250px;
   border-radius: 10px;
+}
+
+/* Recommendations */
+
+.recommendations-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.recommendations-box {
+  align-items: center;
+}
+
+.recs-square-cover {
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+}
+
+.recs-circle-cover {
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+}
+
+.recs-artist-title {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+.recs-artist-box {
+  font-size: 14px;
+  justify-content: center;
 }
