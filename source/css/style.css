@@ -268,6 +268,8 @@ header {
 .new-release-box {
   display: flex;
   gap: 10px;
+  border-right: 1px solid white;
+  padding-right: 24px;
 }
 
 .rpc-box,
@@ -279,8 +281,8 @@ header {
 }
 
 .new-release-cover {
-  height: 110px;
-  width: 110px;
+  height: 90px;
+  width: 90px;
   border-radius: 10px;
 }
 
@@ -294,7 +296,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 162px;
 }
 
 .new-releases-title-box {
@@ -320,7 +321,6 @@ header {
 }
 
 .new-release-author-box {
-  width: 162px;
   display: flex;
   gap: 7px;
 }
