@@ -228,7 +228,8 @@ header {
 .new-releases-section,
 .rpc-section,
 .categories-section,
-.recommendations-section {
+.recommendations-section,
+.mla-section {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -236,7 +237,8 @@ header {
 
 .rpc-title-box,
 .categories-title-box,
-.recommendations-title-box {
+.recommendations-title-box,
+.mla-title-box {
   display: flex;
   justify-content: space-between;
   padding: 0px 3px;
@@ -260,7 +262,8 @@ header {
 .categories-group1-list,
 .categories-group2-list,
 .categories-group3-list,
-.recommendations-list {
+.recommendations-list,
+.mla-list {
   gap: 24px;
   display: flex;
 }
@@ -363,7 +366,8 @@ header {
 
 /* Recently played Section */
 
-.rpc-title {
+.rpc-title,
+.mla-title {
   font-size: 18px;
   font-weight: bold;
   display: flex;
@@ -474,16 +478,33 @@ header {
 
 /* Most Listened Artists */
 
-.items-container {
-  display: flex;
-  gap: 24px;
-}
-
-.item {
+.mla-card {
   background-color: #1d1d1d;
-  width: 384px;
+  width: 354px;
   height: 250px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+.mla-artist {
+  height: 70px;
+  background-color: aliceblue;
+  display: flex;
+  gap: 15px;
+}
+
+.mla-songs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mla-song {
+  height: 48px;
+  background-color: aquamarine;
 }
 
 /* Recommendations */
