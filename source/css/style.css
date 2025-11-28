@@ -447,7 +447,7 @@ header {
 .rock-songs {
   background-color: #1d1d1d;
   width: 284px;
-  height: 500px;
+  height: 541px;
   border-radius: 10px;
 }
 
@@ -485,7 +485,7 @@ header {
 
 .rock-nr-list {
   display: flex;
-  gap: 14px;
+  justify-content: space-between;
 }
 
 .rock-nr-box {
@@ -538,6 +538,7 @@ header {
 
 .line {
   position: relative;
+  margin-top: 3px;
 }
 
 .line::before {
@@ -564,17 +565,73 @@ header {
 }
 
 .rock-playlists {
-  background-color: #1d1d1d;
   height: 175px;
-  width: 1304px;
+  width: 1284px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.rock-plts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.rock-plts-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rock-plt-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rock-plt-title {
+  width: 114px;
+  padding: 0px 3px;
+}
+
+.rock-plt-box .playlist-title {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rock-plt-cover {
+  height: 120px;
+  width: 120px;
   border-radius: 10px;
 }
 
 .rock-artists {
-  background-color: #1d1d1d;
   height: 175px;
-  width: 1304px;
+  width: 1284px;
   border-radius: 10px;
+  padding: 10px;
+}
+
+.rock-artist-cover {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+}
+
+.rock-artist-title {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.rock-artist-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rock-artist-box .playlist-title {
+  font-weight: 700;
+  font-size: 14px;
 }
 
 /* Most Listened Artists */
