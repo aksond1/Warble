@@ -441,14 +441,49 @@ header {
 
 .rock-section {
   display: flex;
-  gap: 20px;
 }
 
 .rock-songs {
-  background-color: #1d1d1d;
+  /* background-color: #1d1d1d; */
   width: 284px;
-  height: 541px;
+  height: 521px;
   border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rock-recs-title {
+  display: flex;
+  justify-content: center;
+}
+
+.rock-recs-songs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.rock-recs-song {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rock-recs-info {
+  display: flex;
+  gap: 8px;
+}
+
+.rock-recs-song-cover {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.author-nickname-rock {
+  font-size: 12px;
+  color: rgb(192, 192, 192);
 }
 
 .rock-rpa {
