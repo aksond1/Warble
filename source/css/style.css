@@ -733,3 +733,17 @@ header {
   font-size: 14px;
   justify-content: center;
 }
+
+/* Trends */
+
+.trends-list {
+  display: flex;
+  gap: 24px;
+}
+
+.trends-song {
+  background-color: #1d1d1d;
+  width: 384px;
+  height: 180px;
+  border-radius: 10px;
+}
