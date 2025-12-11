@@ -746,4 +746,33 @@ header {
   width: 384px;
   height: 180px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.trends-song-cover {
+  height: 140px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.trends-infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 140px;
+}
+
+.trends-song-details {
+  font-size: 15px;
+  color: #929292;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.trends-box {
+  width: 384px;
+  display: flex;
+  gap: 10px;
 }
