@@ -587,18 +587,6 @@ header {
   background: rgb(141, 141, 141);
 }
 
-.line::after {
-  content: "";
-  position: absolute;
-  left: 18%;
-  right: 80%;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 4px;
-  background: white;
-  border-radius: 4px;
-}
-
 .rock-playlists {
   height: 175px;
   width: 1284px;
@@ -634,8 +622,8 @@ header {
 }
 
 .rock-plt-cover {
-  height: 120px;
-  width: 120px;
+  height: 125px;
+  width: 125px;
   border-radius: 10px;
 }
 
@@ -647,8 +635,8 @@ header {
 }
 
 .rock-artist-cover {
-  height: 120px;
-  width: 120px;
+  height: 125px;
+  width: 125px;
   border-radius: 60px;
 }
 
